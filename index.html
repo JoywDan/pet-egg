@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>电子宠物蛋</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="device">
+      <header class="top">
+        <h1>🥚 电子宠物蛋</h1>
+        <p class="sub">照顾好它，它会更开心～</p>
+      </header>
+
+      <section class="pet-screen" aria-live="polite">
+        <div id="petFace" class="pet">🙂</div>
+        <p id="petMessage" class="message">你好呀！今天也要一起玩！</p>
+      </section>
+
+      <section class="stats">
+        <div class="stat-row">
+          <label>饥饿</label>
+          <progress id="hungerBar" max="100" value="50"></progress>
+          <span id="hungerText">50</span>
+        </div>
+        <div class="stat-row">
+          <label>心情</label>
+          <progress id="moodBar" max="100" value="80"></progress>
+          <span id="moodText">80</span>
+        </div>
+        <div class="stat-row">
+          <label>体力</label>
+          <progress id="energyBar" max="100" value="80"></progress>
+          <span id="energyText">80</span>
+        </div>
+        <div class="stat-row">
+          <label>清洁</label>
+          <progress id="cleanBar" max="100" value="70"></progress>
+          <span id="cleanText">70</span>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button data-action="feed">🍎 喂食</button>
+        <button data-action="play">🎾 玩耍</button>
+        <button data-action="sleep">😴 睡觉</button>
+        <button data-action="bath">🛁 洗澡</button>
+      </section>
+
+      <footer class="tip">离开太久它会饿、困、心情变差哦</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
